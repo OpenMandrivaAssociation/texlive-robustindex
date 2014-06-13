@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-robustindex
 Version:	20070226
-Release:	6
+Release:	7
 Summary:	Create index with pagerefs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/robustindex
