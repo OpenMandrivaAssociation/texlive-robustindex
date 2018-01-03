@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/robustindex
-# catalog-date 2007-02-26 15:09:49 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-robustindex
-Version:	20070226
-Release:	10
+Version:	20171003
+Release:	1
 Summary:	Create index with pagerefs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/robustindex
@@ -35,12 +29,8 @@ maintain correct page numbers.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/robustindex/robustglossary.sty
-%{_texmfdistdir}/tex/latex/robustindex/robustindex.sty
-%doc %{_texmfdistdir}/doc/latex/robustindex/README
-%doc %{_texmfdistdir}/doc/latex/robustindex/robustindex.html
-%doc %{_texmfdistdir}/doc/latex/robustindex/robustsample.pdf
-%doc %{_texmfdistdir}/doc/latex/robustindex/robustsample.tex
+%{_texmfdistdir}/tex/latex/robustindex
+%doc %{_texmfdistdir}/doc/latex/robustindex
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,17 +41,3 @@ maintain correct page numbers.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070226-2
-+ Revision: 755719
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070226-1
-+ Revision: 719458
-- texlive-robustindex
-- texlive-robustindex
-- texlive-robustindex
-- texlive-robustindex
-
