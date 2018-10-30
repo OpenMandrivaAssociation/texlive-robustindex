@@ -1,6 +1,6 @@
 Name:		texlive-robustindex
 Version:	20180501
-Release:	1
+Release:	2
 Summary:	Create index with pagerefs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/robustindex
