@@ -1,5 +1,5 @@
 Name:		texlive-robustindex
-Version:	20190131
+Version:	20190228
 Release:	1
 Summary:	Create index with pagerefs
 Group:		Publishing
