@@ -1,12 +1,12 @@
 Name:		texlive-robustindex
-Version:	20190228
+Version:	49877
 Release:	1
 Summary:	Create index with pagerefs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/robustindex
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/robustindex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/robustindex.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/robustindex.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/robustindex.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ robustglossary.sty, which use the \pageref mechanism to
 maintain correct page numbers.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -34,7 +34,7 @@ maintain correct page numbers.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
