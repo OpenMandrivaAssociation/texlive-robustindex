@@ -3,7 +3,7 @@ Version:	49877
 Release:	2
 Summary:	Create index with pagerefs
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/robustindex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/robustindex
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/robustindex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/robustindex.doc.r%{version}.tar.xz
